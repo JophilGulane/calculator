@@ -2,4 +2,4 @@
 # started on Feb 26, 2023
 # completed on Mar 1, 2023
 
-# try it here https://jophilgulane.github.io/calculator/
+# <a href="https://jophilgulane.github.io/calculator/" try it here />
