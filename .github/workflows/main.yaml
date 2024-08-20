@@ -1,0 +1,27 @@
+name: 'Auto Follows & Unfollows by Github Actions for Github users'
+description: 'Features unfollow all non-followers of the owner and follow back those who the owner was not following.'
+author: 'Huniko519'
+
+inputs:
+  token:
+    description: 'The token used to authenticate.'
+    required: true
+    default: ${{ github.token }}
+
+  username:
+    description: 'The base user name.'
+    required: true
+    default: ${{ github.actor }}
+
+  repository:
+    description: 'The name of the repository.'
+    required: true
+    default: ${{ github.repository }}
+    
+runs:
+  using: 'node16'
+  main: 'main.js'
+
+branding:
+  icon: 'user-check'
+  color: 'gray-dark'
